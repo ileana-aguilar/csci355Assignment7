@@ -1,0 +1,121 @@
+body{
+    background-color: #f3eff7;
+}
+.navbar {
+    background-color: #513567;
+    overflow: hidden;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropdown .drop-button {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.navbar a:hover, .dropdown:hover .drop-button {
+    background-color: rgb(68, 131, 154);
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*contact-me.html*/
+.contact-intro{
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+.contact-form{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 20px;
+    /*border: 1px solid #333;*/
+    border-radius: 5px;
+    background-color: #f3eff7;
+}
+
+.form-email{
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    border: 1px solid #343333;
+    border-radius: 8px;
+    background-color: #ffff;
+    width: 100vh;
+}
+
+.form-subject{
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    border: 1px solid #343333;
+    border-radius: 8px;
+    background-color: #ffff;
+    width: 100vh;
+}
+
+.form-message{
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    border: 1px solid #343333;
+    border-radius: 8px;
+    background-color: #ffff;
+    resize: none;
+    width: 100vh;
+    height: 20em;
+}
+
+.send-email{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    border: 1px solid #343333;
+    border-radius: 8px;
+    background-color: #513567;
+    color: #ffff;
+    width: 100vh;
+}
+
+.send-email:hover{
+    border: 1px solid rgb(68, 131, 154);
+    background-color: rgb(68, 131, 154);
+}

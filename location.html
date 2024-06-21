@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 7 | Location</title>
+        <link rel="stylesheet" type="text/css" href="assignment07.css">
+       
+    </head>
+    <body>
+        <script src="assignment07.js"></script>
+        <div class="navbar">
+            <div class="dropdown">
+                <button class="drop-button" onclick="window.location.href='assignment07.html'">Home</button>
+            </div>
+            <div class="dropdown">
+                <button class="drop-button">Course</button>
+                <div class="dropdown-content">
+                    <a href="https://www.kuroseross.com/">Kurose and Ross</a>
+                    <a href="http://w3schools.com">W3Schools</a>
+                    <a href="https://www.geeksforgeeks.org/web-development/">GeeksForGeeks</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="drop-button">Browser</button>
+                <div class="dropdown-content">
+                    <a href="navigator.html">Navigator</a>
+                    <a href="window.html">Window</a>
+                    <a href="screen.html">Screen</a>
+                    <a href="location.html">Location</a>
+                    <a href="geolocation.html">Geolocation</a>   
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="drop-button">About</button>
+                <div class="dropdown-content">
+                    <a href="developer-info.html">Developer Info</a>
+                    <a href="contact-me.html">Contact Me</a>
+                </div>
+            </div>
+        </div>
+        <div id="developer">
+            <h1>Location</h1>
+            <table class="dynamic-table">
+                <tr>
+                    <th>href</th>
+                    <th>hostname</th>
+                    <th>pathname</th>
+                    <th>protocol</th>
+                </tr>
+                <tr>
+                    <td id="href"></td>
+                    <td id="hostname"></td>
+                    <td id="pathname"></td>
+                    <td id="protocol"></td>
+                </tr>
+            </table>
+            </div>
+            <script>
+                document.getElementById("href").innerHTML = location.href;
+                document.getElementById("hostname").innerHTML = location.hostname;
+                document.getElementById("pathname").innerHTML = location.pathname;
+                document.getElementById("protocol").innerHTML = location.protocol;
+            </script>
+        
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 7 | Navigator</title>
+        <link rel="stylesheet" type="text/css" href="assignment07.css">
+       
+    </head>
+    <body>
+        <script src="assignment07.js"></script>
+        <div class="navbar">
+            <div class="dropdown">
+                <button class="drop-button" onclick="window.location.href='assignment07.html'">Home</button>
+            </div>
+            <div class="dropdown">
+                <button class="drop-button">Course</button>
+                <div class="dropdown-content">
+                    <a href="https://www.kuroseross.com/">Kurose and Ross</a>
+                    <a href="http://w3schools.com">W3Schools</a>
+                    <a href="https://www.geeksforgeeks.org/web-development/">GeeksForGeeks</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="drop-button">Browser</button>
+                <div class="dropdown-content">
+                    <a href="navigator.html">Navigator</a>
+                    <a href="window.html">Window</a>
+                    <a href="screen.html">Screen</a>
+                    <a href="location.html">Location</a>
+                    <a href="geolocation.html">Geolocation</a>   
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="drop-button">About</button>
+                <div class="dropdown-content">
+                    <a href="developer-info.html">Developer Info</a>
+                    <a href="contact-me.html">Contact Me</a>
+                </div>
+            </div>
+        </div>
+        <div id="developer">
+            <h1>Navigator</h1>
+            <table class="dynamic-table">
+                <tr>
+                    <th>App Name</th>
+                    <th>Product</th>
+                    <th>App Version</th>
+                    <th>User Agent</th>
+                    <th>Platform</th>
+                    <th>Language</th>
+                </tr>
+                <tr>
+                    <td id="appName"></td>
+                    <td id="product"></td>
+                    <td id="appVersion"></td>
+                    <td id="userAgent"></td>
+                    <td id="platform"></td>
+                    <td id="language"></td>
+                </tr>
+            </table>
+        </div>
+        <script>
+            document.getElementById("appName").innerHTML = navigator.appName;
+            document.getElementById("product").innerHTML = navigator.product;
+            document.getElementById("appVersion").innerHTML = navigator.appVersion;
+            document.getElementById("userAgent").innerHTML = navigator.userAgent;
+            document.getElementById("platform").innerHTML = navigator.platform;
+            document.getElementById("language").innerHTML = navigator.language;
+        </script>
+        
+    </body>
+</html>

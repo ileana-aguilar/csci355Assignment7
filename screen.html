@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 7 | Screen</title>
+        <link rel="stylesheet" type="text/css" href="assignment07.css">
+       
+    </head>
+    <body>
+        <script src="assignment07.js"></script>
+        <div class="navbar">
+            <div class="dropdown">
+                <button class="drop-button" onclick="window.location.href='assignment07.html'">Home</button>
+            </div>
+            <div class="dropdown">
+                <button class="drop-button">Course</button>
+                <div class="dropdown-content">
+                    <a href="https://www.kuroseross.com/">Kurose and Ross</a>
+                    <a href="http://w3schools.com">W3Schools</a>
+                    <a href="https://www.geeksforgeeks.org/web-development/">GeeksForGeeks</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="drop-button">Browser</button>
+                <div class="dropdown-content">
+                    <a href="navigator.html">Navigator</a>
+                    <a href="window.html">Window</a>
+                    <a href="screen.html">Screen</a>
+                    <a href="location.html">Location</a>
+                    <a href="geolocation.html">Geolocation</a>   
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="drop-button">About</button>
+                <div class="dropdown-content">
+                    <a href="developer-info.html">Developer Info</a>
+                    <a href="contact-me.html">Contact Me</a>
+                </div>
+            </div>
+        </div>
+        <div id="developer">
+            <h1>Screen</h1>
+            <table class="dynamic-table">
+                <tr>
+                    <th>Width</th>
+                    <th>Height</th>
+                    <th>Available Width</th>
+                    <th>Available Height</th>
+                    <th>Color Depth</th>
+                    <th>Pixel Depth</th>
+                </tr>
+                <tr>
+                    <td id="width"></td>
+                    <td id="height"></td>
+                    <td id="availWidth"></td>
+                    <td id="availHeight"></td>
+                    <td id="colorDepth"></td>
+                    <td id="pixelDepth"></td>
+                </tr>
+            </table>
+            </div>
+            <script>
+                document.getElementById("width").innerHTML = window.screen.width;
+                document.getElementById("height").innerHTML = window.screen.height;
+                document.getElementById("availWidth").innerHTML = window.screen.availWidth;
+                document.getElementById("availHeight").innerHTML = window.screen.availHeight;
+                document.getElementById("colorDepth").innerHTML = window.screen.colorDepth;
+                document.getElementById("pixelDepth").innerHTML = window.screen.pixelDepth;
+            </script>
+        
+    </body>
+</html>
